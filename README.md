@@ -44,7 +44,7 @@ Arguments:
 | points | [float] | The dataset on which to calculate the interval, represented as a list of floats. | False | N/A |
 | confidence_threshold | float | The confidence threshold to be used in the confidence interval calculation. | True | 0.95 |
 
-Return Value: This function returns a list of two floats containing the bounds of the interval, wrapped in a tuple: ```(lower_bound, upper_bound)```.
+Return Value: This function returns a list of two floats containing the bounds of the interval, wrapped in a tuple: `(lower_bound, upper_bound)`.
 
 ## Setup
 
