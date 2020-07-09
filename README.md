@@ -23,8 +23,8 @@ Arguments:
 
 | Name | Type | Description | Optional? | Default <br/> Value |
 | ---- | ---- | ----------- | --------- | ------------------- |
-| points1 | list(float) | The first dataset to be compared | False | N/A |
-| points2 | list(float) | The second dataset to be compared | False | N/A |
+| points1 | [float] | The first dataset to be compared | False | N/A |
+| points2 | [float] | The second dataset to be compared | False | N/A |
 | two_sided | bool | Whether the test is to be two-tailed or not | True | True |
 
 Return Value: This function returns a single float that indicates the calculated p-value.
@@ -41,7 +41,7 @@ Arguments:
 
 | Name | Type | Description | Optional? | Default <br/> Value |
 | ---- | ---- | ----------- | --------- | ------------------- |
-| points | list(float) | The dataset on which to calculate the interval | False | N/A |
+| points | [float] | The dataset on which to calculate the interval | False | N/A |
 | confidence_threshold | float | The confidence threshold to be used in the calculation | True | 0.95 |
 
 Return Value: This function returns a list of two floats containing the bounds of the interval, wrapped in a tuple: ```(lower_bound, upper_bound)```.
