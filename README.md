@@ -27,7 +27,7 @@ Arguments:
 | `points2` | `[float]` | The second dataset to be compared, represented as a list of floats. | False | N/A |
 | `two_sided` | `bool` | A flag indicating whether the test is to be two-tailed. | True | `True` |
 
-Return Value: This function returns a single float that indicates the calculated p-value.
+Return Value: This function returns a single `float` that indicates the calculated p-value.
 
 ### Function: calculate_confidence_interval
 
@@ -35,7 +35,7 @@ Return Value: This function returns a single float that indicates the calculated
 calculate_confidence_interval(points, confidence_threshold)
 ```
 
-This function calculates and returns the confidence interval on a dataset using the given confidence threshold.
+This function calculates and returns the confidence interval on the provided dataset with the given confidence threshold.
 
 Arguments:
 
@@ -44,7 +44,7 @@ Arguments:
 | `points` | `[float]` | The dataset on which to calculate the interval, represented as a list of floats. | False | N/A |
 | `confidence_threshold` | `float` | The confidence threshold to be used in the confidence interval calculation. | True | `0.95` |
 
-Return Value: This function returns a list of two floats containing the bounds of the interval, wrapped in a tuple: `(lower_bound, upper_bound)`.
+Return Value: This function returns a tuple containing two floats representing the bounds of the interval: `(lower_bound, upper_bound)`.
 
 ## Setup
 
