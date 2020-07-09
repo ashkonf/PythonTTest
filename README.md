@@ -25,7 +25,7 @@ Arguments:
 | ---- | ---- | ----------- | --------- | ------------------- |
 | `points1` | `[float]` | The first dataset to be compared, represented as a list of floats. | False | N/A |
 | `points2` | `[float]` | The second dataset to be compared, represented as a list of floats. | False | N/A |
-| `two_sided` | `bool` | A flag indicating whether the test is to be two-tailed. | True | True |
+| `two_sided` | `bool` | A flag indicating whether the test is to be two-tailed. | True | `True` |
 
 Return Value: This function returns a single float that indicates the calculated p-value.
 
@@ -42,7 +42,7 @@ Arguments:
 | Name | Type | Description | Optional? | Default <br/> Value |
 | ---- | ---- | ----------- | --------- | ------------------- |
 | `points` | `[float]` | The dataset on which to calculate the interval, represented as a list of floats. | False | N/A |
-| `confidence_threshold` | `float` | The confidence threshold to be used in the confidence interval calculation. | True | 0.95 |
+| `confidence_threshold` | `float` | The confidence threshold to be used in the confidence interval calculation. | True | `0.95` |
 
 Return Value: This function returns a list of two floats containing the bounds of the interval, wrapped in a tuple: `(lower_bound, upper_bound)`.
 
@@ -59,14 +59,14 @@ This module relies on 2 relatively standard Python libraries:
   
 ## Example Usage
 
-An implementation of the module on two randomly generated sample datasets has been given below.
+An implementation of the module on two randomly generated sample datasets has been given below:
 
 ```
 import random
 from ttest import *
 
-#Sample Data
-random.seed(1234)
+# Creating sample data:
+random.seed(1234) # Setting a random seed to ensure consistent results across runs of this sample
 points1 = random.sample(range(10, 30), 10)
 points2 = random.sample(range(15, 35), 10)
 
@@ -78,7 +78,7 @@ confidence_interval = calculate_confidence_interval(points1, confidence_threshol
 print("T-Test for the sample data: ", t_test_result)
 print("Calculated confidence interval: ", confidence_interval)
 ```
-The result of this sample code, which is deterministic due to the seeded random samples, is shown below.
+This sample will produce the following results:
 
 ```
 T-Test for the sample data: 0.0011817174369730399
