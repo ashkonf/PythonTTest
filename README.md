@@ -6,7 +6,7 @@ A simple Python implementation of standard statistical t-test and confidence int
 
 There's not much to it; just include the ttest.py file in your project, make sure you've installed the dependencies listed below, and use away!
 
-#### Dependancies
+### Dependancies
 
 This module relies on 2 relatively standard Python libraries:
 
