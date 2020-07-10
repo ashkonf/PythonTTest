@@ -17,12 +17,7 @@ This module relies on two relatively standard Python libraries:
 
 ## Usage
 
-This module exports two public functions:
-
-```
-perform_t_test(points1, points2)
-calculate_confidence_interval(points, confidence_threshold)
-```
+This module exports two public functions, `perform_t_test1` and `calculate_confidence_interval`.
 
 ### Function: perform_t_test
 
