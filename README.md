@@ -60,7 +60,7 @@ A usage of this module on two randomly generated sample datasets appears below:
 
 ```
 import random
-from ttest import *
+from ttest import calculate_confidence_interval, perform_t_test
 
 # Creating sample data:
 random.seed(1234) # Setting a random seed to ensure consistent results across runs of this sample
