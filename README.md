@@ -10,7 +10,7 @@ There's not much to it - just include the ttest.py file in your project, make su
 
 ### Dependancies
 
-This module relies on 2 relatively standard Python libraries:
+This module relies on two relatively standard Python libraries:
 
   1. [Numpy](numpy.org)
   2. [SciPy](www.scipy.org)
