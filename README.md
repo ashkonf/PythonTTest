@@ -2,6 +2,17 @@
 
 A simple Python implementation of standard statistical t-test and confidence interval estimation.
 
+## Setup
+
+There's not much to it; just include the ttest.py file in your project, make sure you've installed the dependencies listed below, and use away!
+
+### Dependancies
+
+This module relies on 2 relatively standard Python libraries:
+
+  1. [Numpy](numpy.org)
+  2. [SciPy](www.scipy.org)
+
 ## Usage
 
 This module exports two public functions:
@@ -45,17 +56,6 @@ Arguments:
 | `confidence_threshold` | `float` | The confidence threshold to be used in the confidence interval calculation. | True | `0.95` |
 
 Return Value: This function returns a tuple containing two floats representing the bounds of the interval: `(lower_bound, upper_bound)`.
-
-## Setup
-
-There's not much to it; just include the ttest.py file in your project, make sure you've installed the dependencies listed below, and use away!
-
-### Dependancies
-
-This module relies on 2 relatively standard Python libraries:
-
-  1. [Numpy](numpy.org)
-  2. [SciPy](www.scipy.org)
   
 ## Example Usage
 
