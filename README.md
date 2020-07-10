@@ -56,7 +56,7 @@ Return Value: This function returns a tuple containing two floats representing t
   
 ## Example Usage
 
-An implementation of the module on two randomly generated sample datasets has been given below:
+A usage of this module on two randomly generated sample datasets appears below:
 
 ```
 import random
@@ -67,10 +67,12 @@ random.seed(1234) # Setting a random seed to ensure consistent results across ru
 points1 = random.sample(range(10, 30), 10)
 points2 = random.sample(range(15, 35), 10)
 
+# Using perform_t_test:
 p_value = perform_t_test(points1, points2)
-confidence_interval = calculate_confidence_interval(points1, 0.95)
-
 print("T-Test for the sample data: ", p_value)
+
+# Using calculate_confidence_interval:
+confidence_interval = calculate_confidence_interval(points1, 0.95)
 print("Calculated confidence interval: ", confidence_interval)
 ```
 This sample will produce the following results:
