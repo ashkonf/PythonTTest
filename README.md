@@ -1,6 +1,8 @@
 # Python T-Test and Confidence Interval Estimation
 
-A simple Python implementation of standard statistical t-test and confidence interval estimation.
+A simple Python implementation of standard statistical t-test and confidence interval estimation. 
+
+For more details on how the the Student's T-Test and confidence interval estimation work behind the scenes, check out the [Student's T-Test Wikipedia article](https://en.wikipedia.org/wiki/Student%27s_t-test) and the [the Wikipedia article on confidence intervals](https://en.wikipedia.org/wiki/Confidence_interval).
 
 ## Setup
 
