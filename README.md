@@ -69,15 +69,15 @@ points2 = random.sample(range(15, 35), 10)
 
 # Using perform_t_test:
 p_value = perform_t_test(points1, points2)
-print("T-Test for the sample data: ", p_value)
+print("P-value for the sample data:", p_value)
 
 # Using calculate_confidence_interval:
 confidence_interval = calculate_confidence_interval(points1, 0.95)
-print("Calculated confidence interval: ", confidence_interval)
+print("Calculated confidence interval:", confidence_interval)
 ```
 This sample will produce the following results:
 
 ```
-T-Test for the sample data: 0.0011817174369730399
+P-value for the sample data: 0.0011817174369730399
 Calculated confidence interval: (14.167038919376605, 20.432961080623397)
 ```
