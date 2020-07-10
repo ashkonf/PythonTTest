@@ -72,12 +72,10 @@ random.seed(1234) # Setting a random seed to ensure consistent results across ru
 points1 = random.sample(range(10, 30), 10)
 points2 = random.sample(range(15, 35), 10)
 
-confidence_threshold = 0.95
+p_value = perform_t_test(points1, points2)
+confidence_interval = calculate_confidence_interval(points1, 0.95)
 
-t_test_result = perform_t_test(points1, points2)
-confidence_interval = calculate_confidence_interval(points1, confidence_threshold)
-
-print("T-Test for the sample data: ", t_test_result)
+print("T-Test for the sample data: ", p_value)
 print("Calculated confidence interval: ", confidence_interval)
 ```
 This sample will produce the following results:
